@@ -1,0 +1,14 @@
+# Папки сборки
+/build/
+/app/build/
+/.gradle/
+/.idea/
+
+# Файлы конфигурации
+/local.properties
+/*.iml
+/.cxx/
+
+# Файлы ОС
+.DS_Store
+Thumbs.db

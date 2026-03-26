@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF4F5"
+    android:paddingTop="56dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Гастро-журнал"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#9B6B9E"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Фото блюда"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#9B6B9E"/>
+
+            <TextView
+                android:id="@+id/tv_gallery_status_inline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(✅ есть)"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Выбрать фото из галереи"
+            android:backgroundTint="#9B6B9E"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_food_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="#F0F0F0"
+            android:contentDescription="Фото блюда"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название блюда"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#9B6B9E"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/et_dish_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Напишите название"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="@android:color/white"
+            android:textColor="#4A4E69"
+            android:textColorHint="#9A8C98"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Где поели?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#9B6B9E"/>
+
+            <TextView
+                android:id="@+id/tv_location_status_inline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(❌ нет)"
+                android:textSize="14sp"
+                android:textColor="#F44336"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_location"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Определить местоположение"
+            android:backgroundTint="#9B6B9E"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_location_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Место не определено"
+            android:padding="12dp"
+            android:background="#FDF4F5"
+            android:textColor="#4A4E69"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мои впечатления"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#9B6B9E"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:padding="12dp"
+            android:hint="Опишите ваши впечатления"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="@android:color/white"
+            android:textColor="#4A4E69"
+            android:textColorHint="#9A8C98"
+            android:maxLines="4"/>
+
+        <Button
+            android:id="@+id/btn_save_entry"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Сохранить"
+            android:backgroundTint="#9B6B9E"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Последняя запись"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#9B6B9E"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_last_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет сохраненных записей"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="@android:color/white"
+            android:minHeight="100dp"
+            android:textColor="#4A4E69"/>
+
+    </LinearLayout>
+
+</ScrollView>

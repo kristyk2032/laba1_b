@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lavender_primary">#9B6B9E</color>
+    <color name="lavender_dark">#7B4A7E</color>
+    <color name="lavender_light">#E8B4B8</color>
+    <color name="lavender_bg">#FDF4F5</color>
+    <color name="lavender_text">#4A4E69</color>
+    <color name="lavender_secondary">#9A8C98</color>
+</resources>
